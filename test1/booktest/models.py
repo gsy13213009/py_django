@@ -12,7 +12,7 @@ class HeroInfo(models.Model):
     hname = models.CharField(max_length=20)
     hgender = models.BooleanField()
     hcontent = models.CharField(max_length=100)
-    hBook = models.ForeignKey('BookInfo')
+    hBook = models.ForeignKey('BookInfo', models.CASCADE)
 
     def __str__(self):
         return "%d" % self.pk
