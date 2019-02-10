@@ -1,0 +1,22 @@
+from django.db import models
+
+
+# Create your models here.
+class BookInfo(models.Model):
+    btitle = models.CharField(max_length=20)
+    bpub_date = models.DateTimeField()
+    bread = models.IntegerField(default=0)
+    bcommet = models.IntegerField(default=0)
+    isDelete = models.BooleanField(default=False)
+
+    class Meta:
+        # 定义 BookInfo 这个类对应的数据库表的名字
+        db_table = 'bookinfo'
+
+
+class HeroInfo(models.Model):
+    hname = models.CharField(max_length=20)
+    hgender = models.BooleanField(default=True)
+    isDelete = models.BooleanField(default=False)
+    hcontent = models.CharField(max_length=100)
+    hbook = models.ForeignKey('BookInfo', on_delete=models.CASCADE)
