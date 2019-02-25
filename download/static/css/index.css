@@ -1,0 +1,213 @@
+.top_bar {
+    background: #3c8dbc;
+    position: relative;
+    height: 50px;
+}
+
+.top_bar .title {
+    width: 200px;
+    height: 50px;
+    background: #3c8dbc;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.top_bar .title:hover {
+    background: #3b8ab8;
+}
+
+.top_bar .title_btn {
+    height: 50px;
+    width: 42px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.top_bar .title_btn:hover {
+    background: #367fa9;
+}
+
+.top_bar .title_icon {
+    width: 145px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.top_bar .title_icon:hover {
+    background: #367fa9;
+}
+
+.main_aside {
+    background: #f9fafc;
+    width: 200px;
+    height: 1049px;
+}
+
+.main_aside .img_cicre {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+}
+
+.main_aside .header {
+    height: 50px;
+    padding-left: 10px;
+}
+
+.main_aside .header_desc {
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.main_aside .menu {
+    padding-left: 10px;
+    margin-top: 20px;
+    color: #848484;
+}
+
+.main_aside .aside_menu li {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 40px;
+}
+
+.main_aside .aside_menu li:hover {
+    background: red;
+}
+
+.content {
+    height: 957px;
+    margin-left: 200px;
+    background: #ecf0f5;
+}
+
+.content_header {
+    margin: 10px;
+}
+
+.content_header .title {
+    color: black;
+    font-size: 18px;
+}
+
+.content_header .desc {
+    color: #777;
+}
+
+.content .box {
+    height: 904px;
+    background: #fff;
+    margin: 0px 10px 0px 10px;
+    border-top: 1px solid gray;
+    overflow: auto;
+}
+
+.content .box .box_header {
+    height: 50px;
+    margin-left: 10px;
+    line-height: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.query {
+	height: 185px;
+	border-bottom: 1px solid gray;
+}
+
+.query_left,
+.query_right {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.query label {
+    display: block;
+    padding: 10px;
+}
+
+.query label span {
+    width: 250px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+.box_bottom {
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.btn_group {
+	height: 30px;
+	width: 60px;
+	background: #00c0ef;
+	color: white;
+}
+
+.content table {
+	height: 797px;
+	display: table;
+	width: 100%;
+
+}
+.content table th {
+	padding: 10px;
+	font-size: 14px;
+	width: 10%;
+	border-bottom: 2px solid rgb(244,244,244);
+}
+.content table tr {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

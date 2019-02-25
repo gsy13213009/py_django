@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return HttpResponse("fldsjalk")
+    return render(request, './download_info/index.html')
