@@ -10,6 +10,7 @@ import json
 def index(request):
     return render(request, './download_info/index.html')
 
+
 def report(request):
     download_info = DownloadInfo()
 
@@ -30,11 +31,14 @@ def report(request):
     download_info.image_url = request.POST.get('image_url')
     download_info.type = request.POST.get('type')
     download_info.pub_date = timezone.now()
+    download_info.event_source = request.POST.get('KEY_LOG_EVENT_SOURCE')
+    download_info.event_id = request.POST.get('KEY_LOG_EVENT_ID')
+    download_info.event_type = request.POST.get('KEY_LOG_EVENT_TYPE')
 
     if download_info.client_timestamp is not None:
         download_info.save()
-        resp = {'code':0, 'detail':'ok , report success'}
+        resp = {'code': 0, 'detail': 'ok , report success'}
     else:
-        resp = {'code': -1, 'detail':'fail , report fail'}
+        resp = {'code': -1, 'detail': 'fail , report fail'}
 
     return HttpResponse(json.dumps(resp), content_type='application/json')
