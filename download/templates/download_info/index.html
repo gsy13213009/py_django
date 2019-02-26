@@ -4,91 +4,122 @@
 <head>
     <title>BI | 数据统计</title>
     <link rel="stylesheet" type="text/css" href="../static/css/cssRecet.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/common.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+    <link rel="stylesheet" type="text/css" href="../static/ccss/common.css">
+    <link rel="stylesheet" type="text/css" href="../static/ccss/index.css">
 </head>
 
 <body>
-    <!-- top_bar start -->
-    <div class="top_bar">
-        <a href="#">
-        	<div class="title fl">
-			<b>BI</b>
-			admin
-			</div>
-		</a>
-        <a href="#">
-        	<div class="title_btn fl">:::</div>
-        </a>
-        <a href="#">
-        	<div class="title_icon fr">Administrator</div>
-        </a>
+<!-- top_bar start -->
+<div class="top_bar">
+    <a href="#">
+        <div class="title fl">
+            <b>BI</b>
+            admin
+        </div>
+    </a>
+    <a href="#">
+        <div class="title_btn fl">:::</div>
+    </a>
+    <a href="#">
+        <div class="title_icon fr">Administrator</div>
+    </a>
+</div>
+<!-- top_bar end -->
+<div class="main_aside fl">
+    <div class="header">
+        <div class="header_icon fl">
+            <img  class="img_cicre" src="http://v2.dongmibang.com:8084/vendor/laravel-admin/AdminLTE/dist/img/user2-160x160.jpg">
+        </div>
+        <div class="header_desc fl">
+            Administrator
+        </div>
     </div>
-    <!-- top_bar end -->
-    <div class="main_aside fl">
-        <div class="header">
-            <div class="header_icon fl">
-                <img  class="img_cicre" src="http://v2.dongmibang.com:8084/vendor/laravel-admin/AdminLTE/dist/img/user2-160x160.jpg">
-    		</div>
-                <div class="header_desc fl">
-                    Administrator
-                </div>
-            </div>
-            <div class="menu">菜单</div>
-            <ul class="aside_menu">
-                <li><a href="#">首页</a></li>
-                <li><a href="#">系统管理</a></li>
-                <li><a href="#">上报查询</a></li>
-            </ul>
+    <div class="menu">菜单</div>
+    <ul class="aside_menu">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">系统管理</a></li>
+        <li><a href="#">上报查询</a></li>
+    </ul>
+</div>
+<div class="content">
+    <div class="content_header">
+        <span class="title">App</span>
+        <small class="desc">上报列表</small>
+    </div>
+    <div class="box">
+        <div class="box_header">
+            <button>刷新</button>
+            <button>筛选</button>
         </div>
-        <div class="content">
-            <div class="content_header">
-                <span class="title">App</span>
-                <small class="desc">上报列表</small>
+        <div class="query">
+            <div class="query_left">
+                <label><span>下载地址(download_url):</span><input type="text" name="download_url"></label>
+                <label><span>应用包名(apk_package_name):</span><input type="text" name="apk_package_name"></label>
+                <label><span>应用版本(apk_version_code):</span><input type="text" name=""></label>
+                <label><span>apk体积(apk_size):</span><input type="text" name=""></label>
             </div>
-            <div class="box">
-                <div class="box_header">
-                    <button>刷新</button>
-                    <button>筛选</button>
-                </div>
-                <div class="query">
-                    <div class="query_left">
-                        <label><span>下载地址(download_url):</span><input type="text" name="download_url"></label>
-                        <label><span>应用包名(apk_package_name):</span><input type="text" name="apk_package_name"></label>
-                        <label><span>应用版本(apk_version_code):</span><input type="text" name=""></label>
-                        <label><span>apk体积(apk_size):</span><input type="text" name=""></label>
-                    </div>
-                    <div class="query_right">
-                        <label><span>下载sdk版本(sdk_version_code):</span><input type="text" name=""></label>
-                        <label><span>通知栏(appid):</span><input type="text" name=""></label>
-                        <label><span>扩展广告参数(ad_join_id):</span><input type="text" name=""></label>
-                    </div>
-                </div>
-                <div class="box_bottom">
-                    <button class="btn_group">搜索</button>
-                    <button class="btn_group" style="background: #f1f1f1;color: black">重置</button>
-                </div>
-                <table class="table_content">
-                    <thead>
-                        <tr>
-                        	<th>下载地址</th>
-                        	<th>应用包名</th>
-                        	<th>应用版本</th>
-                        	<th>apk体积</th>
-                        	<th>下载sdk版本</th>
-                        	<th>通知栏appid</th>
-                        	<th>ad_join_id</th>
-                        	<th>ffffff</th>
-                        	<th>ffffff</th>
-                        	<th>ffffff</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                    	<td>hhhh</td>
-                    </tr>
-                </table>
+            <div class="query_right">
+                <label><span>下载sdk版本(sdk_version_code):</span><input type="text" name=""></label>
+                <label><span>通知栏(appid):</span><input type="text" name=""></label>
+                <label><span>扩展广告参数(ad_join_id):</span><input type="text" name=""></label>
             </div>
         </div>
+        <div class="box_bottom">
+            <button class="btn_group">搜索</button>
+            <button class="btn_group" style="background: #f1f1f1;color: black">重置</button>
+        </div>
+        <table class="table_content" style="border: 1px solid red">
+            <thead>
+            <tr>
+                <th>id</th>
+                <th>client_timestamp</th>
+                <th>sdk_version_code</th>
+                <th>event_source</th>
+                <th>event_id</th>
+                <th>event_type</th>
+                <th>download_url</th>
+                <th>apk_package_name</th>
+                <th>apk_version_code</th>
+                <th>apk_size</th>
+                <th>progress</th>
+                <th>ad_join_id</th>
+                <th>app_id</th>
+                <th>h5_extra_data</th>
+                <th>pause_cause</th>
+                <th>state</th>
+                <th>dp_extension</th>
+                <th>image_url</th>
+                <th>type</th>
+                <th>pub_date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+                <td>fffffff</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 </body>
 
 </html>
