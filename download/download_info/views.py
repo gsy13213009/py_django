@@ -1,14 +1,24 @@
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
 from django.utils import timezone
-from download_info.models import DownloadInfo
 import json
+
+from download_info.models import DownloadInfo
 
 
 def index(request):
-    return render(request, './download_info/index.html')
+    paginator = Paginator(DownloadInfo.objects.all(), 25)
+    page = request.GET.get('page')
+    try:
+        contacts = paginator.page(page)
+    except PageNotAnInteger:
+        contacts = paginator.page(1)
+    except EmptyPage:
+        contacts = paginator.page(paginator.num_pages)
+    return render(request, './download_info/index.html', {'cus_list': contacts})
 
 
 def report(request):
@@ -22,7 +32,6 @@ def report(request):
     download_info.apk_size = request.POST.get('apk_size')
     download_info.app_id = request.POST.get('app_id')
     download_info.ad_join_id = request.POST.get('ad_join_id')
-    download_info.ld = request.POST.get('ld')
     download_info.h5_extra_data = request.POST.get('h5_extra_data')
     download_info.pause_cause = request.POST.get('pause_cause')
     download_info.progress = request.POST.get('progress')

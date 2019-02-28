@@ -4,8 +4,8 @@
 <head>
     <title>BI | 数据统计</title>
     <link rel="stylesheet" type="text/css" href="../static/css/cssRecet.css">
-    <link rel="stylesheet" type="text/css" href="../static/ccss/common.css">
-    <link rel="stylesheet" type="text/css" href="../static/ccss/index.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
 </head>
 
 <body>
@@ -28,7 +28,8 @@
 <div class="main_aside fl">
     <div class="header">
         <div class="header_icon fl">
-            <img  class="img_cicre" src="http://v2.dongmibang.com:8084/vendor/laravel-admin/AdminLTE/dist/img/user2-160x160.jpg">
+            <img class="img_cicre"
+                 src="http://v2.dongmibang.com:8084/vendor/laravel-admin/AdminLTE/dist/img/user2-160x160.jpg">
         </div>
         <div class="header_desc fl">
             Administrator
@@ -53,8 +54,10 @@
         </div>
         <div class="query">
             <div class="query_left">
-                <label><span>下载地址(download_url):</span><input type="text" name="download_url"></label>
-                <label><span>应用包名(apk_package_name):</span><input type="text" name="apk_package_name"></label>
+                <label><span>下载地址(download_url):</span><input type="text"
+                                                              name="download_url"></label>
+                <label><span>应用包名(apk_package_name):</span><input type="text"
+                                                                  name="apk_package_name"></label>
                 <label><span>应用版本(apk_version_code):</span><input type="text" name=""></label>
                 <label><span>apk体积(apk_size):</span><input type="text" name=""></label>
             </div>
@@ -94,30 +97,52 @@
             </tr>
             </thead>
             <tbody>
+            {% for customer in cus_list %}
             <tr>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
-                <td>fffffff</td>
+                <td>{{customer.id}}</td>
+                <td>{{customer.client_timestamp}}</td>
+                <td>{{customer.sdk_version_code}}</td>
+                <td>{{customer.event_source}}</td>
+                <td>{{customer.event_id}}</td>
+                <td>{{customer.event_type}}</td>
+                <td>{{customer.download_url}}</td>
+                <td>{{customer.apk_package_name}}</td>
+                <td>{{customer.apk_version_code}}</td>
+                <td>{{customer.apk_size}}</td>
+                <td>{{customer.progress}}</td>
+                <td>{{customer.ad_join_id}}</td>
+                <td>{{customer.app_id}}</td>
+                <td>{{customer.h5_extra_data}}</td>
+                <td>{{customer.pause_cause}}</td>
+                <td>{{customer.state}}</td>
+                <td>{{customer.dp_extension}}</td>
+                <td>{{customer.image_url}}</td>
+                <td>{{customer.type}}</td>
+                <td>{{customer.pub_date}}</td>
             </tr>
+            {% endfor %}
             </tbody>
         </table>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                {% if cus_list.has_previous %}
+                <li>
+                    <a href="?page={{ cus_list.previous_page_number }}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if cus_list.has_next %}
+                <li>
+                    <a href="?page={{ cus_list.next_page_number }}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
     </div>
 </div>
 </body>
