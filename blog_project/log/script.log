@@ -1,0 +1,7 @@
+2019-02-28 06:42:30,420 [Thread-4:123145351159808] [django.request:228] [log:log_response] [WARNING]- Not Found: /js/jquery.min.js
+2019-02-28 06:42:30,422 [Thread-5:123145356414976] [django.request:228] [log:log_response] [WARNING]- Not Found: /js/sliders.js
+2019-02-28 06:42:30,425 [Thread-6:123145361670144] [django.request:228] [log:log_response] [WARNING]- Not Found: /js/nav.js
+2019-02-28 06:42:30,427 [Thread-7:123145366925312] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a1.jpg
+2019-02-28 06:42:30,429 [Thread-8:123145372180480] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
+2019-02-28 06:42:30,440 [Thread-4:123145351159808] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
+2019-02-28 06:42:30,443 [Thread-5:123145356414976] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
