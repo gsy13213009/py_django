@@ -153,3 +153,13 @@
 2019-03-04 09:19:23,680 [Thread-14:123145376116736] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
 2019-03-04 09:19:23,682 [Thread-12:123145365606400] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
 2019-03-04 09:19:23,688 [Thread-12:123145365606400] [django.request:228] [log:log_response] [WARNING]- Not Found: /js/nav.js
+2019-03-04 09:20:48,279 [Thread-12:123145365606400] [django.request:228] [log:log_response] [WARNING]- Not Found: /js/jquery.min.js
+2019-03-04 09:20:48,280 [Thread-13:123145370861568] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a1.jpg
+2019-03-04 09:20:48,289 [Thread-11:123145355096064] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
+2019-03-04 09:20:48,289 [Thread-10:123145360351232] [django.request:228] [log:log_response] [WARNING]- Not Found: /js/nav.js
+2019-03-04 09:20:48,290 [Thread-14:123145376116736] [django.request:228] [log:log_response] [WARNING]- Not Found: /js/sliders.js
+2019-03-04 09:20:48,329 [Thread-13:123145370861568] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
+2019-03-04 09:20:48,330 [Thread-11:123145355096064] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
+2019-03-04 09:20:48,331 [Thread-14:123145376116736] [django.request:228] [log:log_response] [WARNING]- Not Found: /js/nav.js
+2019-03-04 09:44:58,698 [Thread-23:123145391882240] [django.request:228] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-03-04 09:45:21,042 [Thread-23:123145391882240] [django.request:228] [log:log_response] [WARNING]- Not Found: /favicon.ico

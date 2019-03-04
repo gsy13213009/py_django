@@ -8965,3 +8965,681 @@ Traceback (most recent call last):
     (bit, current))  # missing attribute
 django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
 2019-03-04 09:19:23,689 [Thread-12:123145365606400] [django.server:154] [basehttp:log_message] [WARNING]- "GET /js/nav.js HTTP/1.1" 404 2086
+2019-03-04 09:20:48,225 [Thread-12:123145365606400] [blog.views:18] [views:index] [ERROR]- [Errno 2] No such file or directory: 'sss.txt'
+2019-03-04 09:20:48,228 [Thread-12:123145365606400] [django.server:154] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 14953
+2019-03-04 09:20:48,250 [Thread-12:123145365606400] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '' [name='index']>]], 'path': 'js/jquery.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-03-04 09:20:48,254 [Thread-13:123145370861568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '' [name='index']>]], 'path': 'images/a1.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-03-04 09:20:48,259 [Thread-11:123145355096064] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '' [name='index']>]], 'path': 'images/a2.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-03-04 09:20:48,261 [Thread-10:123145360351232] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '' [name='index']>]], 'path': 'js/nav.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-03-04 09:20:48,262 [Thread-14:123145376116736] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '' [name='index']>]], 'path': 'js/sliders.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-03-04 09:20:48,280 [Thread-12:123145365606400] [django.server:154] [basehttp:log_message] [WARNING]- "GET /js/jquery.min.js HTTP/1.1" 404 2107
+2019-03-04 09:20:48,281 [Thread-13:123145370861568] [django.server:154] [basehttp:log_message] [WARNING]- "GET /images/a1.jpg HTTP/1.1" 404 2098
+2019-03-04 09:20:48,291 [Thread-11:123145355096064] [django.server:154] [basehttp:log_message] [WARNING]- "GET /images/a2.jpg HTTP/1.1" 404 2098
+2019-03-04 09:20:48,291 [Thread-10:123145360351232] [django.server:154] [basehttp:log_message] [WARNING]- "GET /js/nav.js HTTP/1.1" 404 2086
+2019-03-04 09:20:48,292 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [WARNING]- "GET /js/sliders.js HTTP/1.1" 404 2098
+2019-03-04 09:20:48,296 [Thread-13:123145370861568] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '' [name='index']>]], 'path': 'images/a3.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-03-04 09:20:48,300 [Thread-11:123145355096064] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '' [name='index']>]], 'path': 'images/a4.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-03-04 09:20:48,302 [Thread-14:123145376116736] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '' [name='index']>]], 'path': 'js/nav.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-03-04 09:20:48,332 [Thread-13:123145370861568] [django.server:154] [basehttp:log_message] [WARNING]- "GET /images/a3.jpg HTTP/1.1" 404 2098
+2019-03-04 09:20:48,332 [Thread-11:123145355096064] [django.server:154] [basehttp:log_message] [WARNING]- "GET /images/a4.jpg HTTP/1.1" 404 2098
+2019-03-04 09:20:48,332 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [WARNING]- "GET /js/nav.js HTTP/1.1" 404 2086
+2019-03-04 09:20:54,939 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 09:20:54,940 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:20:54,941 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:20:54.932162' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:20:54.932162', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:20:54,943 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:20:54,972 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:20:54,986 [Thread-13:123145370861568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/config.js HTTP/1.1" 304 0
+2019-03-04 09:20:54,987 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:20:54,989 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:20:54.983331' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:20:54.983331', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:20:54,991 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:20:54,993 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:20:57,227 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:20:57,229 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:20:57.223266' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:20:57.223266', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:20:57,233 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:20:57,270 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:21:08,799 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:21:08,800 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:21:08.794222' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:21:08.794222', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:21:08,802 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:21:08,856 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:21:08,871 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:21:08,873 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:21:08.867717' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:21:08.867717', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:21:08,876 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:21:08,881 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:22:41,288 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:22:41,289 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:22:41.285026' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:22:41.285026', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:22:41,292 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:22:41,321 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:22:41,336 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:22:41,337 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:22:41.333096' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:22:41.333096', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:22:41,339 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:22:41,341 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:22:42,453 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:22:42,454 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:22:42.444015' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:22:42.444015', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:22:42,456 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:22:42,509 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:22:42,526 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:22:42,527 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:22:42.522637' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:22:42.522637', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:22:42,530 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:22:42,533 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:23:02,359 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:23:02,361 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:23:02.355237' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:23:02.355237', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:23:02,363 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:23:02,384 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:23:02,398 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:23:02,398 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:23:02.394469' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:23:02.394469', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:23:02,400 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:23:02,403 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:23:09,937 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:23:09,939 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:23:09.930757' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:23:09.930757', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:23:09,943 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:23:09,976 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:23:27,541 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:23:27,544 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:23:27.532767' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:23:27.532767', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:23:27,546 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:23:27,571 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:23:27,585 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:23:27,586 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:23:27.581068' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:23:27.581068', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:23:27,589 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:23:27,591 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:24:25,527 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:24:25,529 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:24:25.518319' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:24:25.518319', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:24:25,532 [Thread-14:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:24:25,563 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:24:25,581 [Thread-13:123145370861568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/forms.css HTTP/1.1" 200 8505
+2019-03-04 09:24:25,582 [Thread-12:123145365606400] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+2019-03-04 09:24:25,583 [Thread-15:123145381371904] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/core.js HTTP/1.1" 200 7135
+2019-03-04 09:24:25,588 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/base.css HTTP/1.1" 200 16225
+2019-03-04 09:24:25,589 [Thread-11:123145355096064] [django.db.backends:111] [utils:execute] [DEBUG]- (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 09:24:25,592 [Thread-11:123145355096064] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:24:25,593 [Thread-13:123145370861568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/responsive.css HTTP/1.1" 200 17976
+2019-03-04 09:24:25,594 [Thread-12:123145365606400] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+2019-03-04 09:24:25,594 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+2019-03-04 09:24:25,597 [Thread-11:123145355096064] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:24:25.574074' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:24:25.574074', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:24:25,600 [Thread-15:123145381371904] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+2019-03-04 09:24:25,602 [Thread-12:123145365606400] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+2019-03-04 09:24:25,602 [Thread-13:123145370861568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2019-03-04 09:24:25,603 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+2019-03-04 09:24:25,604 [Thread-10:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271751
+2019-03-04 09:24:25,615 [Thread-11:123145355096064] [django.db.backends:111] [utils:execute] [DEBUG]- (0.003) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:24:25,624 [Thread-10:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/html5.js HTTP/1.1" 200 2429
+2019-03-04 09:24:25,624 [Thread-12:123145365606400] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/lang/zh-CN.js HTTP/1.1" 200 8528
+2019-03-04 09:24:25,625 [Thread-14:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/config.js HTTP/1.1" 200 121
+2019-03-04 09:24:25,627 [Thread-15:123145381371904] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+2019-03-04 09:24:25,628 [Thread-13:123145370861568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/kindeditor-all-min.js HTTP/1.1" 200 186001
+2019-03-04 09:24:25,635 [Thread-11:123145355096064] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:24:25,636 [Thread-12:123145365606400] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+2019-03-04 09:24:25,636 [Thread-10:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+2019-03-04 09:24:25,698 [Thread-12:123145365606400] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+2019-03-04 09:24:25,699 [Thread-11:123145355096064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+2019-03-04 09:24:25,841 [Thread-11:123145355096064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/themes/default/default.css HTTP/1.1" 200 20773
+2019-03-04 09:24:25,842 [Thread-10:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+2019-03-04 09:24:25,851 [Thread-10:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/themes/default/default.png HTTP/1.1" 200 8299
+2019-03-04 09:24:32,118 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 09:24:32,118 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:24:32,120 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:24:32.108639' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:24:32.108639', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:24:32,128 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.006) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:24:32,160 [Thread-10:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:24:32,177 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:24:32,178 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:24:32.173172' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:24:32.173172', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:24:32,181 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:24:32,184 [Thread-10:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:24:37,052 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:24:37,054 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:24:37.047638' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:24:37.047638', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:24:37,056 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:24:37,087 [Thread-10:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:24:37,100 [Thread-11:123145355096064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/config.js HTTP/1.1" 304 0
+2019-03-04 09:24:37,104 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:24:37,107 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:24:37.098742' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:24:37.098742', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:24:37,110 [Thread-10:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:24:37,117 [Thread-10:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:44:23,132 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 09:44:23,133 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:44:23,134 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:44:23.121510' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:44:23.121510', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:44:23,138 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:44:23,174 [Thread-16:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:44:23,188 [Thread-17:123145355096064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/config.js HTTP/1.1" 304 0
+2019-03-04 09:44:23,191 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:44:23,192 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:44:23.185894' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:44:23.185894', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:44:23,195 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:44:23,197 [Thread-16:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:44:30,270 [Thread-16:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/themes/default/background.png HTTP/1.1" 200 1410
+2019-03-04 09:44:30,314 [Thread-18:123145365606400] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/plugins/image/images/align_left.gif HTTP/1.1" 200 639
+2019-03-04 09:44:30,315 [Thread-17:123145355096064] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/plugins/image/images/align_top.gif HTTP/1.1" 200 625
+2019-03-04 09:44:30,315 [Thread-19:123145370861568] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/plugins/image/images/align_right.gif HTTP/1.1" 200 636
+2019-03-04 09:44:30,315 [Thread-16:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/plugins/image/images/refresh.png HTTP/1.1" 200 800
+2019-03-04 09:44:40,668 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:44:40,669 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:44:40.659918' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:44:40.659918', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:44:40,671 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:44:40,709 [Thread-16:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:44:40,728 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:44:40,730 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:44:40.722813' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 09:44:40.722813', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 09:44:40,732 [Thread-16:123145360351232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:44:40,737 [Thread-16:123145360351232] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:44:58,013 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 302 0
+2019-03-04 09:44:58,054 [Thread-20:123145376116736] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x101ebcc80>>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/blog/article/add/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x102071358>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x102238240>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102071b70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME': '郭思义的个人博客', 'SITE_DESC': '专注于软件开发'}, {}, {'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x102071fd0>, 'site_title': 'Django site admin', 'site_header': 'Django administration', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': 'Log in', 'app_path': '/admin/login/?next=/admin/blog/article/add/', 'username': '', 'next': '/admin/blog/article/add/', 'site': <django.contrib.sites.requests.RequestSite object at 0x102145278>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False}]
+2019-03-04 09:44:58,055 [Thread-20:123145376116736] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x101ebcc80>>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/blog/article/add/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x102071358>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x102238240>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102071b70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME': '郭思义的个人博客', 'SITE_DESC': '专注于软件开发'}, {}, {'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x102071fd0>, 'site_title': 'Django site admin', 'site_header': 'Django administration', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': 'Log in', 'app_path': '/admin/login/?next=/admin/blog/article/add/', 'username': '', 'next': '/admin/blog/article/add/', 'site': <django.contrib.sites.requests.RequestSite object at 0x102145278>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False}]
+2019-03-04 09:44:58,063 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/login/?next=/admin/blog/article/add/ HTTP/1.1" 200 1853
+2019-03-04 09:44:58,081 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/base.css HTTP/1.1" 200 16225
+2019-03-04 09:44:58,081 [Thread-21:123145381371904] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+2019-03-04 09:44:58,082 [Thread-22:123145386627072] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/responsive.css HTTP/1.1" 200 17976
+2019-03-04 09:44:58,084 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2019-03-04 09:44:58,162 [Thread-21:123145381371904] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+2019-03-04 09:44:58,162 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+2019-03-04 09:44:58,697 [Thread-23:123145391882240] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '' [name='index']>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-03-04 09:44:58,698 [Thread-23:123145391882240] [django.server:154] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2092
+2019-03-04 09:45:11,958 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 09:45:11,959 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:45:11,962 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`username` = 'admin'; args=('admin',)
+2019-03-04 09:45:12,091 [Thread-20:123145376116736] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x102161378>>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/blog/article/add/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x10228d198>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x102238550>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10214a5c0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME': '郭思义的个人博客', 'SITE_DESC': '专注于软件开发'}, {}, {'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x102071828>, 'site_title': 'Django site admin', 'site_header': 'Django administration', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': 'Log in', 'app_path': '/admin/login/?next=/admin/blog/article/add/', 'username': '', 'next': '/admin/blog/article/add/', 'site': <django.contrib.sites.requests.RequestSite object at 0x10228d208>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False}]
+2019-03-04 09:45:12,092 [Thread-20:123145376116736] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x102161378>>, 'request': <WSGIRequest: POST '/admin/login/?next=/admin/blog/article/add/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x10228d198>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x102238550>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10214a5c0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME': '郭思义的个人博客', 'SITE_DESC': '专注于软件开发'}, {}, {'form': <AdminAuthenticationForm bound=True, valid=False, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x102071828>, 'site_title': 'Django site admin', 'site_header': 'Django administration', 'site_url': '/', 'has_permission': False, 'available_apps': [], 'title': 'Log in', 'app_path': '/admin/login/?next=/admin/blog/article/add/', 'username': '', 'next': '/admin/blog/article/add/', 'site': <django.contrib.sites.requests.RequestSite object at 0x10228d208>, 'site_name': '127.0.0.1:8000', 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False}]
+2019-03-04 09:45:12,099 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "POST /admin/login/?next=/admin/blog/article/add/ HTTP/1.1" 200 2014
+2019-03-04 09:45:12,128 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+2019-03-04 09:45:20,469 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:45:20,472 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.003) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`username` = 'gsy'; args=('gsy',)
+2019-03-04 09:45:20,594 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT (1) AS `a` FROM `django_session` WHERE `django_session`.`session_key` = 'zv7f4keecqc0tobpvheymvbrrh0dngec'  LIMIT 1; args=('zv7f4keecqc0tobpvheymvbrrh0dngec',)
+2019-03-04 09:45:20,613 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.016) INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES ('zv7f4keecqc0tobpvheymvbrrh0dngec', 'M2U5YmEwYThmM2FhOTM0ZmU5YWYxNGE3NTM5ZWQ2YWMxNzdhNzgxYTp7fQ==', '2019-03-18 09:45:20.594502'); args=('zv7f4keecqc0tobpvheymvbrrh0dngec', 'M2U5YmEwYThmM2FhOTM0ZmU5YWYxNGE3NTM5ZWQ2YWMxNzdhNzgxYTp7fQ==', '2019-03-18 09:45:20.594502')
+2019-03-04 09:45:20,716 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.007) UPDATE `blog_user` SET `last_login` = '2019-03-04 09:45:20.708548' WHERE `blog_user`.`id` = 1; args=('2019-03-04 09:45:20.708548', 1)
+2019-03-04 09:45:20,730 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.007) UPDATE `django_session` SET `session_data` = 'YTQ0ODA5MDcwNmYyMDc4NGZkNGJiNGQ1ZTU1MzRlNTZhNWY5ZDMzNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNTJkZGVkMDgyOTJiZTBkYjY2YmM4ODlkZjMyOWEyZmFjZjIzN2Y1In0=', `expire_date` = '2019-03-18 09:45:20.723252' WHERE `django_session`.`session_key` = 'zv7f4keecqc0tobpvheymvbrrh0dngec'; args=('YTQ0ODA5MDcwNmYyMDc4NGZkNGJiNGQ1ZTU1MzRlNTZhNWY5ZDMzNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNTJkZGVkMDgyOTJiZTBkYjY2YmM4ODlkZjMyOWEyZmFjZjIzN2Y1In0=', '2019-03-18 09:45:20.723252', 'zv7f4keecqc0tobpvheymvbrrh0dngec')
+2019-03-04 09:45:20,732 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "POST /admin/login/?next=/admin/blog/article/add/ HTTP/1.1" 302 0
+2019-03-04 09:45:20,766 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:45:20,767 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:45:20.762662' AND `django_session`.`session_key` = 'zv7f4keecqc0tobpvheymvbrrh0dngec'); args=('2019-03-04 09:45:20.762662', 'zv7f4keecqc0tobpvheymvbrrh0dngec')
+2019-03-04 09:45:20,769 [Thread-20:123145376116736] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:45:20,796 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 09:45:20,815 [Thread-24:123145397137408] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+2019-03-04 09:45:20,816 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/forms.css HTTP/1.1" 200 8505
+2019-03-04 09:45:20,816 [Thread-21:123145381371904] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 09:45:20,817 [Thread-25:123145402392576] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/core.js HTTP/1.1" 200 7135
+2019-03-04 09:45:20,818 [Thread-26:123145407647744] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+2019-03-04 09:45:20,820 [Thread-21:123145381371904] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:45:20,823 [Thread-24:123145397137408] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+2019-03-04 09:45:20,824 [Thread-21:123145381371904] [django.db.backends:111] [utils:execute] [DEBUG]- (0.003) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 09:45:20.807208' AND `django_session`.`session_key` = 'zv7f4keecqc0tobpvheymvbrrh0dngec'); args=('2019-03-04 09:45:20.807208', 'zv7f4keecqc0tobpvheymvbrrh0dngec')
+2019-03-04 09:45:20,827 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+2019-03-04 09:45:20,828 [Thread-21:123145381371904] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 09:45:20,828 [Thread-25:123145402392576] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+2019-03-04 09:45:20,832 [Thread-21:123145381371904] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 09:45:20,835 [Thread-25:123145402392576] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/config.js HTTP/1.1" 200 121
+2019-03-04 09:45:20,835 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/lang/zh-CN.js HTTP/1.1" 200 8528
+2019-03-04 09:45:20,837 [Thread-21:123145381371904] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/html5.js HTTP/1.1" 200 2429
+2019-03-04 09:45:20,838 [Thread-26:123145407647744] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+2019-03-04 09:45:20,840 [Thread-22:123145386627072] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271751
+2019-03-04 09:45:20,841 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+2019-03-04 09:45:20,841 [Thread-24:123145397137408] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/kindeditor-all-min.js HTTP/1.1" 200 186001
+2019-03-04 09:45:20,841 [Thread-25:123145402392576] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+2019-03-04 09:45:20,842 [Thread-21:123145381371904] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+2019-03-04 09:45:20,894 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/themes/default/default.css HTTP/1.1" 200 20773
+2019-03-04 09:45:21,017 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/themes/default/default.png HTTP/1.1" 200 8299
+2019-03-04 09:45:21,041 [Thread-23:123145391882240] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '' [name='index']>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-03-04 09:45:21,042 [Thread-23:123145391882240] [django.server:154] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2092
+2019-03-04 09:45:25,275 [Thread-21:123145381371904] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/plugins/image/images/align_top.gif HTTP/1.1" 200 625
+2019-03-04 09:45:25,275 [Thread-20:123145376116736] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/plugins/image/images/refresh.png HTTP/1.1" 200 800
+2019-03-04 09:45:25,275 [Thread-25:123145402392576] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/themes/default/background.png HTTP/1.1" 200 1410
+2019-03-04 09:45:25,275 [Thread-24:123145397137408] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/plugins/image/images/align_right.gif HTTP/1.1" 200 636
+2019-03-04 09:45:25,276 [Thread-22:123145386627072] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/plugins/image/images/align_left.gif HTTP/1.1" 200 639
