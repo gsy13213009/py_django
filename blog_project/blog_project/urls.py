@@ -18,12 +18,15 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
 from django.conf import settings
+
+from blog import upload
 from blog.views import index
 
 urlpatterns = [
     url(r"^uploads/(?P<path>.*)$",
         views.static.serve,
         {"document_root": settings.MEDIA_ROOT,}),
+    url(r"^admin/upload/(?P<dir_name>[^/]+)$", upload.upload_image, name='upload_image'),
     path('admin/', admin.site.urls),
     path('', index, name='index')
 ]

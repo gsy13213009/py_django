@@ -5,7 +5,6 @@ from blog.models import *
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    fields = ('title', 'desc', 'content')
 
     class Media:
         js = (
