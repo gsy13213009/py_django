@@ -7,6 +7,14 @@ from blog.models import *
 class ArticleAdmin(admin.ModelAdmin):
     fields = ('title', 'desc', 'content')
 
+    class Media:
+        js = (
+            'js/kindeditor/kindeditor-all-min.js',
+            '/static/js/kindeditor/lang/zh-CN.js',
+            '/static/js/kindeditor/config.js',
+            '/static/js/html5.js'
+        )
+
 
 admin.site.register(User)
 admin.site.register(Tag)
