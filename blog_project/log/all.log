@@ -9643,3 +9643,411 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLR
 2019-03-04 09:45:25,275 [Thread-25:123145402392576] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/themes/default/background.png HTTP/1.1" 200 1410
 2019-03-04 09:45:25,275 [Thread-24:123145397137408] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/plugins/image/images/align_right.gif HTTP/1.1" 200 636
 2019-03-04 09:45:25,276 [Thread-22:123145386627072] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/plugins/image/images/align_left.gif HTTP/1.1" 200 639
+2019-03-04 09:51:11,225 [Dummy-1:123145559855104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 09:51:11,226 [Dummy-1:123145559855104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:51:11,232 [Dummy-1:123145559855104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.006) SHOW FULL TABLES; args=None
+2019-03-04 09:51:11,248 [Dummy-1:123145559855104] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-03-04 09:51:47,743 [Dummy-1:123145385521152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 09:51:47,744 [Dummy-1:123145385521152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:51:47,750 [Dummy-1:123145385521152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.006) SHOW FULL TABLES; args=None
+2019-03-04 09:51:47,770 [Dummy-1:123145385521152] [django.db.backends:111] [utils:execute] [DEBUG]- (0.007) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-03-04 09:51:56,442 [Dummy-1:123145556508672] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 09:51:56,443 [Dummy-1:123145556508672] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 09:51:56,455 [Dummy-1:123145556508672] [django.db.backends:111] [utils:execute] [DEBUG]- (0.012) SHOW FULL TABLES; args=None
+2019-03-04 09:51:56,472 [Dummy-1:123145556508672] [django.db.backends:111] [utils:execute] [DEBUG]- (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-03-04 10:12:18,370 [Dummy-1:123145343795200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 10:12:18,371 [Dummy-1:123145343795200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:18,399 [Dummy-1:123145343795200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.028) SHOW FULL TABLES; args=None
+2019-03-04 10:12:18,403 [Dummy-1:123145343795200] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-03-04 10:12:20,860 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 10:12:20,861 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:20,862 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 10:12:20.856712' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 10:12:20.856712', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 10:12:20,864 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:20,888 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'blog' AND `django_content_type`.`model` = 'article'); args=('blog', 'article')
+2019-03-04 10:12:20,942 [Thread-2:123145349050368] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/article/add/ HTTP/1.1" 200 5281
+2019-03-04 10:12:20,998 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:21,000 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 10:12:20.995271' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 10:12:20.995271', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 10:12:21,004 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:21,007 [Thread-3:123145354305536] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/js/kindeditor/config.js HTTP/1.1" 304 0
+2019-03-04 10:12:21,009 [Thread-2:123145349050368] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 10:12:23,656 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:23,658 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 10:12:23.649258' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 10:12:23.649258', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 10:12:23,660 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:23,672 [Thread-2:123145349050368] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1113c2488>>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: gsy>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111491240>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11145bc88>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME': '郭思义的个人博客', 'SITE_DESC': '专注于软件开发'}, {}, {'site_title': 'Django site admin', 'site_header': 'Django administration', 'site_url': '/', 'has_permission': True, 'available_apps': [{'name': 'Authentication and Authorization', 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': 'Groups', 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}]}, {'name': 'Blog', 'app_label': 'blog', 'app_url': '/admin/blog/', 'has_module_perms': True, 'models': [{'name': '分类', 'object_name': 'Category', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/category/', 'add_url': '/admin/blog/category/add/'}, {'name': '友情链接', 'object_name': 'Links', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/links/', 'add_url': '/admin/blog/links/add/'}, {'name': '广告', 'object_name': 'Ad', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/ad/', 'add_url': '/admin/blog/ad/add/'}, {'name': '文章', 'object_name': 'Article', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/article/', 'add_url': '/admin/blog/article/add/'}, {'name': '标签', 'object_name': 'Tag', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/tag/', 'add_url': '/admin/blog/tag/add/'}, {'name': '用户', 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/user/', 'add_url': '/admin/blog/user/add/'}, {'name': '评论', 'object_name': 'Comment', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/comment/', 'add_url': '/admin/blog/comment/add/'}]}], 'title': 'Site administration', 'app_list': [{'name': 'Authentication and Authorization', 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': 'Groups', 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}]}, {'name': 'Blog', 'app_label': 'blog', 'app_url': '/admin/blog/', 'has_module_perms': True, 'models': [{'name': '分类', 'object_name': 'Category', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/category/', 'add_url': '/admin/blog/category/add/'}, {'name': '友情链接', 'object_name': 'Links', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/links/', 'add_url': '/admin/blog/links/add/'}, {'name': '广告', 'object_name': 'Ad', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/ad/', 'add_url': '/admin/blog/ad/add/'}, {'name': '文章', 'object_name': 'Article', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/article/', 'add_url': '/admin/blog/article/add/'}, {'name': '标签', 'object_name': 'Tag', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/tag/', 'add_url': '/admin/blog/tag/add/'}, {'name': '用户', 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/user/', 'add_url': '/admin/blog/user/add/'}, {'name': '评论', 'object_name': 'Comment', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/comment/', 'add_url': '/admin/blog/comment/add/'}]}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False}]
+2019-03-04 10:12:23,676 [Thread-2:123145349050368] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1113c2488>>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: gsy>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111491240>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11145bc88>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME': '郭思义的个人博客', 'SITE_DESC': '专注于软件开发'}, {}, {'site_title': 'Django site admin', 'site_header': 'Django administration', 'site_url': '/', 'has_permission': True, 'available_apps': [{'name': 'Authentication and Authorization', 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': 'Groups', 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}]}, {'name': 'Blog', 'app_label': 'blog', 'app_url': '/admin/blog/', 'has_module_perms': True, 'models': [{'name': '分类', 'object_name': 'Category', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/category/', 'add_url': '/admin/blog/category/add/'}, {'name': '友情链接', 'object_name': 'Links', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/links/', 'add_url': '/admin/blog/links/add/'}, {'name': '广告', 'object_name': 'Ad', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/ad/', 'add_url': '/admin/blog/ad/add/'}, {'name': '文章', 'object_name': 'Article', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/article/', 'add_url': '/admin/blog/article/add/'}, {'name': '标签', 'object_name': 'Tag', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/tag/', 'add_url': '/admin/blog/tag/add/'}, {'name': '用户', 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/user/', 'add_url': '/admin/blog/user/add/'}, {'name': '评论', 'object_name': 'Comment', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/comment/', 'add_url': '/admin/blog/comment/add/'}]}], 'title': 'Site administration', 'app_list': [{'name': 'Authentication and Authorization', 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': 'Groups', 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}]}, {'name': 'Blog', 'app_label': 'blog', 'app_url': '/admin/blog/', 'has_module_perms': True, 'models': [{'name': '分类', 'object_name': 'Category', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/category/', 'add_url': '/admin/blog/category/add/'}, {'name': '友情链接', 'object_name': 'Links', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/links/', 'add_url': '/admin/blog/links/add/'}, {'name': '广告', 'object_name': 'Ad', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/ad/', 'add_url': '/admin/blog/ad/add/'}, {'name': '文章', 'object_name': 'Article', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/article/', 'add_url': '/admin/blog/article/add/'}, {'name': '标签', 'object_name': 'Tag', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/tag/', 'add_url': '/admin/blog/tag/add/'}, {'name': '用户', 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/user/', 'add_url': '/admin/blog/user/add/'}, {'name': '评论', 'object_name': 'Comment', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/blog/comment/', 'add_url': '/admin/blog/comment/add/'}]}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False}]
+2019-03-04 10:12:23,685 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_admin_log`.`id`, `django_admin_log`.`action_time`, `django_admin_log`.`user_id`, `django_admin_log`.`content_type_id`, `django_admin_log`.`object_id`, `django_admin_log`.`object_repr`, `django_admin_log`.`action_flag`, `django_admin_log`.`change_message`, `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile`, `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_admin_log` INNER JOIN `blog_user` ON (`django_admin_log`.`user_id` = `blog_user`.`id`) LEFT OUTER JOIN `django_content_type` ON (`django_admin_log`.`content_type_id` = `django_content_type`.`id`) WHERE `django_admin_log`.`user_id` = 1 ORDER BY `django_admin_log`.`action_time` DESC  LIMIT 10; args=(1,)
+2019-03-04 10:12:23,686 [Thread-2:123145349050368] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 5817
+2019-03-04 10:12:23,698 [Thread-2:123145349050368] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+2019-03-04 10:12:23,710 [Thread-3:123145354305536] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2019-03-04 10:12:23,711 [Thread-2:123145349050368] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2019-03-04 10:12:25,629 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:25,630 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 10:12:25.622779' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 10:12:25.622779', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 10:12:25,633 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:25,635 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS `__count` FROM `blog_user`; args=()
+2019-03-04 10:12:25,636 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS `__count` FROM `blog_user`; args=()
+2019-03-04 10:12:25,639 [Thread-2:123145349050368] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` ORDER BY `blog_user`.`id` DESC; args=()
+2019-03-04 10:12:25,654 [Thread-2:123145349050368] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errors] in None
+2019-03-04 10:12:25,658 [Thread-2:123145349050368] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [show] in [{'True': True, 'False': False, 'None': None, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1114a47b8>>}]
+2019-03-04 10:12:25,659 [Thread-2:123145349050368] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_multipart] in None
+2019-03-04 10:12:25,671 [Thread-2:123145349050368] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in None
+2019-03-04 10:12:25,674 [Thread-2:123145349050368] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/user/ HTTP/1.1" 200 4308
+2019-03-04 10:12:25,685 [Thread-2:123145349050368] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+2019-03-04 10:12:25,687 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 10:12:25,687 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:25,689 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 10:12:25.683308' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 10:12:25.683308', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 10:12:25,691 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:25,693 [Thread-3:123145354305536] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 10:12:25,708 [Thread-3:123145354305536] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2019-03-04 10:12:26,717 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:26,719 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 10:12:26.707864' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 10:12:26.707864', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 10:12:26,721 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:26,724 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:26,746 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.017) SELECT `auth_group`.`id`, `auth_group`.`name` FROM `auth_group` INNER JOIN `blog_user_groups` ON (`auth_group`.`id` = `blog_user_groups`.`group_id`) WHERE `blog_user_groups`.`user_id` = 1; args=(1,)
+2019-03-04 10:12:26,755 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.008) SELECT `auth_permission`.`id`, `auth_permission`.`name`, `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `blog_user_user_permissions` ON (`auth_permission`.`id` = `blog_user_user_permissions`.`permission_id`) INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `blog_user_user_permissions`.`user_id` = 1 ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+2019-03-04 10:12:26,760 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'blog' AND `django_content_type`.`model` = 'user'); args=('blog', 'user')
+2019-03-04 10:12:26,784 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `auth_group`.`id`, `auth_group`.`name` FROM `auth_group` ORDER BY `auth_group`.`name` ASC; args=()
+2019-03-04 10:12:26,793 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.004) SELECT `auth_permission`.`id`, `auth_permission`.`name`, `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=()
+2019-03-04 10:12:26,794 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 1; args=(1,)
+2019-03-04 10:12:26,795 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 1; args=(1,)
+2019-03-04 10:12:26,796 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 1; args=(1,)
+2019-03-04 10:12:26,797 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 1; args=(1,)
+2019-03-04 10:12:26,798 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 3; args=(3,)
+2019-03-04 10:12:26,799 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 3; args=(3,)
+2019-03-04 10:12:26,800 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 3; args=(3,)
+2019-03-04 10:12:26,801 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 3; args=(3,)
+2019-03-04 10:12:26,803 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 2; args=(2,)
+2019-03-04 10:12:26,804 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 2; args=(2,)
+2019-03-04 10:12:26,805 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 2; args=(2,)
+2019-03-04 10:12:26,806 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 2; args=(2,)
+2019-03-04 10:12:26,807 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 7; args=(7,)
+2019-03-04 10:12:26,808 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 7; args=(7,)
+2019-03-04 10:12:26,808 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 7; args=(7,)
+2019-03-04 10:12:26,809 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 7; args=(7,)
+2019-03-04 10:12:26,810 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 8; args=(8,)
+2019-03-04 10:12:26,811 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 8; args=(8,)
+2019-03-04 10:12:26,812 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 8; args=(8,)
+2019-03-04 10:12:26,813 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 8; args=(8,)
+2019-03-04 10:12:26,813 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 9; args=(9,)
+2019-03-04 10:12:26,814 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 9; args=(9,)
+2019-03-04 10:12:26,815 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 9; args=(9,)
+2019-03-04 10:12:26,816 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 9; args=(9,)
+2019-03-04 10:12:26,817 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 10; args=(10,)
+2019-03-04 10:12:26,818 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 10; args=(10,)
+2019-03-04 10:12:26,819 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 10; args=(10,)
+2019-03-04 10:12:26,820 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 10; args=(10,)
+2019-03-04 10:12:26,821 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 11; args=(11,)
+2019-03-04 10:12:26,823 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 11; args=(11,)
+2019-03-04 10:12:26,823 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 11; args=(11,)
+2019-03-04 10:12:26,824 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 11; args=(11,)
+2019-03-04 10:12:26,825 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 12; args=(12,)
+2019-03-04 10:12:26,826 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 12; args=(12,)
+2019-03-04 10:12:26,827 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 12; args=(12,)
+2019-03-04 10:12:26,828 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 12; args=(12,)
+2019-03-04 10:12:26,829 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 6; args=(6,)
+2019-03-04 10:12:26,830 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 6; args=(6,)
+2019-03-04 10:12:26,830 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 6; args=(6,)
+2019-03-04 10:12:26,834 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 6; args=(6,)
+2019-03-04 10:12:26,835 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 4; args=(4,)
+2019-03-04 10:12:26,837 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 4; args=(4,)
+2019-03-04 10:12:26,838 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 4; args=(4,)
+2019-03-04 10:12:26,839 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 4; args=(4,)
+2019-03-04 10:12:26,840 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 5; args=(5,)
+2019-03-04 10:12:26,841 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 5; args=(5,)
+2019-03-04 10:12:26,842 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 5; args=(5,)
+2019-03-04 10:12:26,843 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`id` = 5; args=(5,)
+2019-03-04 10:12:26,881 [Thread-3:123145354305536] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/user/1/change/ HTTP/1.1" 200 16338
+2019-03-04 10:12:26,898 [Thread-2:123145349050368] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+2019-03-04 10:12:26,898 [Thread-4:123145359560704] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20281
+2019-03-04 10:12:26,900 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:26,901 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 10:12:26.893713' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 10:12:26.893713', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 10:12:26,905 [Thread-3:123145354305536] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:26,907 [Thread-3:123145354305536] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 10:12:27,037 [Thread-3:123145354305536] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2019-03-04 10:12:27,038 [Thread-4:123145359560704] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+2019-03-04 10:12:40,946 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-03-04 10:12:40,946 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:40,947 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 10:12:40.943079' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 10:12:40.943079', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 10:12:40,949 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:40,951 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:40,957 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `auth_group`.`id`, `auth_group`.`name` FROM `auth_group` INNER JOIN `blog_user_groups` ON (`auth_group`.`id` = `blog_user_groups`.`group_id`) WHERE `blog_user_groups`.`user_id` = 1; args=(1,)
+2019-03-04 10:12:40,960 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT `auth_permission`.`id`, `auth_permission`.`name`, `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `blog_user_user_permissions` ON (`auth_permission`.`id` = `blog_user_user_permissions`.`permission_id`) INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `blog_user_user_permissions`.`user_id` = 1 ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+2019-03-04 10:12:41,031 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT (1) AS `a` FROM `blog_user` WHERE (`blog_user`.`username` = 'gsy' AND NOT (`blog_user`.`id` = 1))  LIMIT 1; args=('gsy', 1)
+2019-03-04 10:12:41,036 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.003) UPDATE `blog_user` SET `password` = 'pbkdf2_sha256$120000$VaEUhHYYdrkm$gmTxHUmObXOoHX4FrdNzrAdys/fhnnqJBQw4rFH4DUI=', `last_login` = '2019-03-04 09:45:20', `is_superuser` = 1, `username` = 'gsy', `first_name` = '', `last_name` = '', `email` = 'gsy_love@163.com', `is_staff` = 1, `is_active` = 1, `date_joined` = '2019-03-01 09:31:19', `avatar` = 'avatar/2019/03/710x360.png', `qq` = NULL, `mobile` = NULL WHERE `blog_user`.`id` = 1; args=('pbkdf2_sha256$120000$VaEUhHYYdrkm$gmTxHUmObXOoHX4FrdNzrAdys/fhnnqJBQw4rFH4DUI=', '2019-03-04 09:45:20', True, 'gsy', '', '', 'gsy_love@163.com', True, True, '2019-03-01 09:31:19', 'avatar/2019/03/710x360.png', 1)
+2019-03-04 10:12:41,038 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT `auth_group`.`id` FROM `auth_group` INNER JOIN `blog_user_groups` ON (`auth_group`.`id` = `blog_user_groups`.`group_id`) WHERE `blog_user_groups`.`user_id` = 1; args=(1,)
+2019-03-04 10:12:41,040 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `auth_permission`.`id` FROM `auth_permission` INNER JOIN `blog_user_user_permissions` ON (`auth_permission`.`id` = `blog_user_user_permissions`.`permission_id`) INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `blog_user_user_permissions`.`user_id` = 1 ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+2019-03-04 10:12:41,049 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.007) INSERT INTO `django_admin_log` (`action_time`, `user_id`, `content_type_id`, `object_id`, `object_repr`, `action_flag`, `change_message`) VALUES ('2019-03-04 10:12:41.041540', 1, 6, '1', 'gsy', 2, '[{\"changed\": {\"fields\": [\"avatar\"]}}]'); args=['2019-03-04 10:12:41.041540', 1, 6, '1', 'gsy', 2, '[{"changed": {"fields": ["avatar"]}}]']
+2019-03-04 10:12:41,138 [Thread-4:123145359560704] [django.server:154] [basehttp:log_message] [INFO]- "POST /admin/blog/user/1/change/ HTTP/1.1" 302 0
+2019-03-04 10:12:41,142 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:41,144 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 10:12:41.140992' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 10:12:41.140992', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 10:12:41,145 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:41,147 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS `__count` FROM `blog_user`; args=()
+2019-03-04 10:12:41,148 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS `__count` FROM `blog_user`; args=()
+2019-03-04 10:12:41,150 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` ORDER BY `blog_user`.`id` DESC; args=()
+2019-03-04 10:12:41,163 [Thread-4:123145359560704] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errors] in None
+2019-03-04 10:12:41,166 [Thread-4:123145359560704] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [show] in [{'True': True, 'False': False, 'None': None, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1116ceae8>>}]
+2019-03-04 10:12:41,167 [Thread-4:123145359560704] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_multipart] in None
+2019-03-04 10:12:41,179 [Thread-4:123145359560704] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gsy/.virtualenvs/test/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in None
+2019-03-04 10:12:41,182 [Thread-4:123145359560704] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/blog/user/ HTTP/1.1" 200 4483
+2019-03-04 10:12:41,196 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-03-04 10:12:41,197 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-04 10:12:41.193611' AND `django_session`.`session_key` = 'jstx4s4dvbgc8hbgim96riu830st34ry'); args=('2019-03-04 10:12:41.193611', 'jstx4s4dvbgc8hbgim96riu830st34ry')
+2019-03-04 10:12:41,199 [Thread-4:123145359560704] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT `blog_user`.`id`, `blog_user`.`password`, `blog_user`.`last_login`, `blog_user`.`is_superuser`, `blog_user`.`username`, `blog_user`.`first_name`, `blog_user`.`last_name`, `blog_user`.`email`, `blog_user`.`is_staff`, `blog_user`.`is_active`, `blog_user`.`date_joined`, `blog_user`.`avatar`, `blog_user`.`qq`, `blog_user`.`mobile` FROM `blog_user` WHERE `blog_user`.`id` = 1; args=(1,)
+2019-03-04 10:12:41,201 [Thread-4:123145359560704] [django.server:154] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+2019-03-04 10:12:41,221 [Thread-4:123145359560704] [django.server:154] [basehttp:log_message] [INFO]- "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
