@@ -21,3 +21,4 @@ class DownloadInfo(models.Model):
     image_url = models.CharField(max_length=100, default='', null=True)
     type = models.CharField(max_length=10, default='', null=True)
     pub_date = models.DateTimeField()
+    cfm_download = models.CharField(max_length=2, default='', null=True)

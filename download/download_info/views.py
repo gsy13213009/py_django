@@ -44,6 +44,7 @@ def report(request):
     download_info.event_source = request.POST.get('KEY_LOG_EVENT_SOURCE')
     download_info.event_id = request.POST.get('KEY_LOG_EVENT_ID')
     download_info.event_type = request.POST.get('KEY_LOG_EVENT_TYPE')
+    download_info.cfm_download = request.POST.get('cfm_download')
 
     if download_info.client_timestamp is not None:
         download_info.save()
