@@ -1,2 +1,4 @@
 .idea/
 blog_project/log/*
+blog_project/blog/__pycache__/
+blog_project/venv/
