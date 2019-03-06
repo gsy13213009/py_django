@@ -52,5 +52,19 @@ def index(request):
         print(e)
     return render(request, 'index.html', locals())
 
+
 def archive(request):
+    year = request.GET.get('year', None)
+    month = request.GET.get('month', None)
+
+    # 获取文章数量
+    article_list = Article.objects.filter(date_publish__icontains=year+'-'+month)
+    # 初始化分页器Paginator
+    paginator = Paginator(article_list, 2)
+    try:
+        page = int(request.GET.get('page', 1))
+        article_list = paginator.page(page)
+    except:
+        article_list = paginator.page(1)
+
     return render(request, 'archive.html', locals())
