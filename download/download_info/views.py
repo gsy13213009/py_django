@@ -10,15 +10,15 @@ from download_info.models import DownloadInfo
 
 
 def index(request):
-    paginator = Paginator(DownloadInfo.objects.all(), 25)
-    page = request.GET.get('page')
+    info_list = DownloadInfo.objects.all()
+    paginator = Paginator(info_list, 15)
     try:
-        contacts = paginator.page(page)
+        page = int(request.GET.get('page', 1))
+        info_list = paginator.page(page)
     except PageNotAnInteger:
-        contacts = paginator.page(1)
-    except EmptyPage:
-        contacts = paginator.page(paginator.num_pages)
-    return render(request, './download_info/index.html', {'cus_list': contacts})
+        info_list = paginator.page(1)
+
+    return render(request, 'download_info/index.html', locals())
 
 
 def report(request):

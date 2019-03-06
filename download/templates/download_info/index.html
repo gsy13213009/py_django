@@ -97,7 +97,7 @@
             </tr>
             </thead>
             <tbody>
-            {% for customer in cus_list %}
+            {% for customer in info_list %}
             <tr>
                 <td>{{customer.id}}</td>
                 <td>{{customer.client_timestamp}}</td>
@@ -124,25 +124,46 @@
             </tbody>
         </table>
 
-        <nav aria-label="Page navigation">
-            <ul class="pagination">
-                {% if cus_list.has_previous %}
-                <li>
-                    <a href="?page={{ cus_list.previous_page_number }}" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
+
+        <div id="pagination">
+            <ul id="pagination-flickr">
+                {% if info_list.has_previous %}
+                    <li class="previous"><a href="?page={{ info_list.previous_page_number }}">&laquo;上一页</a></li>
+                {% else %}
+                    <li class="previous-off">&laquo;上一页</li>
                 {% endif %}
 
-                {% if cus_list.has_next %}
-                <li>
-                    <a href="?page={{ cus_list.next_page_number }}" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
+                <li class="active">{{ info_list.number }}/{{ info_list.paginator.num_pages }}</li>
+
+                {% if info_list.has_next %}
+                    <li class="next"><a href="?page={{ info_list.next_page_number }}">下一页 &raquo;</a></li>
+                {% else %}
+                    <li class="next-off">下一页 &raquo;</li>
                 {% endif %}
             </ul>
-        </nav>
+        </div>
+
+
+
+{#        <nav aria-label="Page navigation">#}
+{#            <ul class="pagination">#}
+{#                {% if cus_list.has_previous %}#}
+{#                <li>#}
+{#                    <a href="?page={{ cus_list.previous_page_number }}" aria-label="Previous">#}
+{#                        <span aria-hidden="true">&laquo;</span>#}
+{#                    </a>#}
+{#                </li>#}
+{#                {% endif %}#}
+{##}
+{#                {% if cus_list.has_next %}#}
+{#                <li>#}
+{#                    <a href="?page={{ cus_list.next_page_number }}" aria-label="Next">#}
+{#                        <span aria-hidden="true">&raquo;</span>#}
+{#                    </a>#}
+{#                </li>#}
+{#                {% endif %}#}
+{#            </ul>#}
+{#        </nav>#}
     </div>
 </div>
 </body>
