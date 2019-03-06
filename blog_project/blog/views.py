@@ -46,7 +46,7 @@ def index(request):
         # cursor.execute('SELECT DISTINCT id, date_publish, DATE_FORMAT(date_publish, "%%Y-%%m") as col_date FROM blog_article ORDER BY date_publish')
         # row = cursor.fetchall()
         # print(row)
-        print(Article.objects.distinct_date())
+        archive_list = Article.objects.distinct_date()
 
     except Exception as e:
         print(e)
