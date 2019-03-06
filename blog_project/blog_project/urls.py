@@ -20,13 +20,14 @@ from django.urls import path
 from django.conf import settings
 
 from blog import upload
-from blog.views import index
+from blog.views import index, archive
 
 urlpatterns = [
     url(r"^uploads/(?P<path>.*)$",
         views.static.serve,
-        {"document_root": settings.MEDIA_ROOT,}),
+        {"document_root": settings.MEDIA_ROOT, }),
     url(r"^admin/upload/(?P<dir_name>[^/]+)$", upload.upload_image, name='upload_image'),
     path('admin/', admin.site.urls),
-    path('', index, name='index')
+    path('', index, name='index'),
+    path("archive/", archive, name='archive'),
 ]

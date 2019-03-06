@@ -51,3 +51,6 @@ def index(request):
     except Exception as e:
         print(e)
     return render(request, 'index.html', locals())
+
+def archive(request):
+    return render(request, 'archive.html', locals())
