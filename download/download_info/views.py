@@ -1,4 +1,5 @@
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+from django.db import models
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -10,7 +11,7 @@ from download_info.models import DownloadInfo
 
 
 def index(request):
-    info_list = DownloadInfo.objects.all()
+    info_list = DownloadInfo.objects.order_by('-client_timestamp')
     paginator = Paginator(info_list, 15)
     try:
         page = int(request.GET.get('page', 1))
