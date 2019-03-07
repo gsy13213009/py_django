@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
+{% load myfilter %}
 {% block right_content %}
     {% include 'right_content.html' %}
 {% endblock %}
 {% block left_content %}
     <div class="l_box f_l">
         <div class="postdate">
-            <div class="month">{{ article.date_publish }}</div>
+            <div class="month">{{ article.date_publish | month_to_upper }}</div>
             <div class="date"></div>
         </div>
         <div class="title">

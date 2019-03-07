@@ -65,6 +65,9 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'blog.views.global_setting'
             ],
+            'libraries': {
+                'myfilter': 'blog.templatetags.myfilter'
+            }
         },
     },
 ]
