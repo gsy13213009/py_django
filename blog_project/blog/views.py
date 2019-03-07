@@ -13,7 +13,8 @@ from django.conf import settings
 
 
 def global_setting(requst):
-    SITE_NAME =  settings.SITE_NAME
+    SITE_URL = settings.SITE_URL
+    SITE_NAME = settings.SITE_NAME
     SITE_DESC = settings.SITE_DESC
     category_list = Category.objects.all()
     archive_list = Article.objects.distinct_date()
@@ -45,6 +46,16 @@ def archive(request):
 
     return render(request, 'archive.html', locals())
 
+
+def article(request):
+    id = request.GET.get('id', None)
+    try:
+        article = Article.objects.get(pk=id)
+    except Article.DoesNotExist as e:
+        print(e)
+        logger.error(e)
+        return render(request, 'failure.html', {"reason": "没有找到文章"})
+    return render(request, 'article.html', locals())
 
 def get_page_list(request, list):
     paginator = Paginator(list, 2)

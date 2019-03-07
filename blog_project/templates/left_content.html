@@ -46,7 +46,7 @@
         {% for article in article_list %}
             <div class="blogs">
                 <ul>
-                    <h3><a href="/">{{ article.title }}</a></h3>
+                    <h3><a href="{% url 'article' %}?id={{ article.id }}">{{ article.title }}</a></h3>
                     <p>{{ article.desc }}<p>
                     <p class="autor">
                         {# 这里是一个文章对应多个标签，一个标签对应多个文章，取出所有的标签 #}

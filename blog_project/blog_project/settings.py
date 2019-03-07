@@ -131,6 +131,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 AUTH_USER_MODEL = 'blog.User'
 
 # 网站基本信息配置
+SITE_URL = 'http://localhost:8000/'
 SITE_NAME = '郭思义的个人博客'
 SITE_DESC = '专注于软件开发'
 
