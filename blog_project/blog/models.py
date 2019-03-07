@@ -13,7 +13,7 @@ class User(AbstractUser):
         verbose_name_plural = verbose_name
         ordering = ['-id']
 
-        def __unicode__(self):
+        def __str__(self):
             return self.username
 
 
@@ -25,8 +25,8 @@ class Tag(models.Model):
         verbose_name = '标签'
         verbose_name_plural = verbose_name
 
-        def __unicode__(self):
-            return self.name
+    def __str__(self):
+        return self.name
 
 
 class Category(models.Model):
@@ -36,9 +36,10 @@ class Category(models.Model):
     class Meta:
         verbose_name = '分类'
         verbose_name_plural = verbose_name
+        ordering = ['-index']
 
-        def __unicode__(self):
-            return self.name
+    def __str__(self):
+        return self.name
 
 
 # 定义文章的管理类型
@@ -70,7 +71,7 @@ class Article(models.Model):
         verbose_name_plural = verbose_name
         ordering = ['-date_publish']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
 
@@ -87,8 +88,8 @@ class Comment(models.Model):
         verbose_name_plural = verbose_name
         ordering = ['-date_publish']
 
-    def __unicode__(self):
-        return str(self.id)
+    def __str__(self):
+        return self.content
 
 
 # 友情链接
@@ -104,7 +105,7 @@ class Links(models.Model):
         verbose_name_plural = verbose_name
         ordering = ['index', 'id']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
 
@@ -122,5 +123,5 @@ class Ad(models.Model):
         verbose_name_plural = verbose_name
         ordering = ['index', 'id']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
