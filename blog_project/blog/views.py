@@ -28,14 +28,7 @@ def global_setting(requst):
 
 def index(request):
     # 获取所有的文章数量
-    article_list = Article.objects.all()
-    # 初始化分页器Paginator
-    paginator = Paginator(article_list, 2)
-    try:
-        page = int(request.GET.get('page', 1))
-        article_list = paginator.page(page)
-    except:
-        article_list = paginator.page(1)
+    article_list = get_page_list(request, Article.objects.all())
     return render(request, 'index.html', locals())
 
 
@@ -46,11 +39,16 @@ def archive(request):
     # 获取文章数量
     article_list = Article.objects.filter(date_publish__icontains=year + '-' + month)
     # 初始化分页器Paginator
-    paginator = Paginator(article_list, 2)
-    try:
-        page = int(request.GET.get('page', 1))
-        article_list = paginator.page(page)
-    except:
-        article_list = paginator.page(1)
+    article_list = get_page_list(request, article_list)
 
     return render(request, 'archive.html', locals())
+
+
+def get_page_list(request, list):
+    paginator = Paginator(list, 2)
+    try:
+        page = request.GET.get('page', 1)
+        list = paginator.page(page)
+    except:
+        list = paginator.page(1)
+    return list
