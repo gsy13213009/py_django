@@ -2,28 +2,30 @@ import logging
 
 from django.core.paginator import Paginator
 from django.db import connection
+from django.db.models import Count
 from django.shortcuts import render
 
 # Create your views here.
-from blog.models import Category, Article
+from blog.models import Category, Article, Comment
 
 logger = logging.getLogger('blog.views')
 from django.conf import settings
 
 
 def global_setting(requst):
+    SITE_NAME =  settings.SITE_NAME
+    SITE_DESC = settings.SITE_DESC
     category_list = Category.objects.all()
     archive_list = Article.objects.distinct_date()
     # 标签云
     # 广告
     # 友情链接
+    # 评论排行
+    # 1. 分别取出所有comment里的article字段，然后做个聚合Count函数，命名为comment_count，然后排序
+    comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by('-comment_count')
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
 
-    return {
-        'category_list': category_list,
-        'archive_list': archive_list,
-        'SITE_NAME': settings.SITE_NAME,
-        'SITE_DESC': settings.SITE_DESC,
-    }
+    return locals()
 
 
 def index(request):
