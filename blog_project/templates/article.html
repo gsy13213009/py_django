@@ -7,7 +7,7 @@
     <div class="l_box f_l">
         <div class="postdate">
             <div class="month">{{ article.date_publish | month_to_upper }}</div>
-            <div class="date"></div>
+            <div class="date">{{ article.date_publish | date:'Y' }}</div>
         </div>
         <div class="title">
             <h2><a href="http://www.baidu.org/?p=542" rel="bookmark" title="{{ article.title }}">{{ article.title }}</a></h2>
