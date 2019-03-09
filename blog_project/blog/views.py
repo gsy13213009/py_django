@@ -21,11 +21,15 @@ def global_setting(requst):
     # 标签云
     # 广告
     # 友情链接
+    # 浏览排行
+    article_click_list = Article.objects.all().order_by('-click_count')[:6]
     # 评论排行
     # 1. 分别取出所有comment里的article字段，然后做个聚合Count函数，命名为comment_count，然后排序
     comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by('-comment_count')
     article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
 
+    # 站长推荐
+    article_recommend_list = Article.objects.filter(is_recommend=False)[:6]
     return locals()
 
 
