@@ -6,4 +6,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path("archive/", views.archive, name='archive'),
     path("article/", views.article, name='article'),
+    path(r'^comment/post/$', views.comment_post, name='comment_post'),
 ]

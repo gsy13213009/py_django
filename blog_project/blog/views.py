@@ -3,9 +3,10 @@ import logging
 from django.core.paginator import Paginator
 from django.db import connection
 from django.db.models import Count
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
+from blog.forms import CommentForm
 from blog.models import Category, Article, Comment
 
 logger = logging.getLogger('blog.views')
@@ -59,7 +60,32 @@ def article(request):
         print(e)
         logger.error(e)
         return render(request, 'failure.html', {"reason": "没有找到文章"})
+    # 评论表单
+    comment_form = CommentForm({
+                                   'author': request.user.username,
+                                   'email': request.user.email,
+                                   'url': request.user.url,
+                                   'article': id
+                               })
     return render(request, 'article.html', locals())
+
+def comment_post(request):
+    try:
+        comment_info = CommentForm(request.POST)
+        if comment_info.is_valid():
+            comment = Comment.objects.create(
+                user_name=comment_info.cleaned_data['author'],
+                email=comment_info.cleaned_data['email'],
+                url=comment_info.cleaned_data['url'],
+                content=comment_info.cleaned_data['comment'],
+                article=comment_info.cleaned_data['article'],
+                user=request.user if request.user.is_authenticated() else None
+            )
+            comment.save()
+    except Exception as e:
+        logger.error(e)
+    return redirect(request.META['HTTP_REFERER'])
+
 
 def get_page_list(request, list):
     paginator = Paginator(list, 2)
